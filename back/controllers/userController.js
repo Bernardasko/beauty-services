@@ -2,7 +2,7 @@ const User = require("../models/userModel");
 
 exports.getAllUsers = async (req, res) => {
   try {
-    const users = await User.find().populate("beauties.beautyId");
+    const users = await User.find().populate("beauty.beautyId");
     res.status(200).json({
       status: "success",
       results: users.length,

@@ -43,7 +43,7 @@ const userSchema = new mongoose.Schema({
       beautyId: { 
         type: mongoose.Schema.ObjectId, 
         ref: "Beauty",
-       },
+      },
       date: {
         type: String,
       },
